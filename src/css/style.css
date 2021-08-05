@@ -1,0 +1,1819 @@
+/*Colors*/
+/*Typography*/
+/*General*/
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*FLEX DISPLAY*/
+/* Hide Tablet and Mobile*/
+.tablet,
+.desktop {
+  display: none;
+}
+
+/*HOME STYLING*/
+header {
+  position: relative;
+}
+
+header .homeDesign {
+  display: none;
+}
+
+header .navContainer {
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  height: 11vh;
+}
+
+header .navContainer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  z-index: 100;
+}
+
+header .navContainer nav ul {
+  position: absolute;
+  width: 90%;
+  height: 235px;
+  background-color: #eeeff4;
+  top: 11vh;
+  z-index: 1000;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: unset;
+  padding: 50px 30px;
+}
+
+header .navContainer nav ul li {
+  list-style: none;
+  font-weight: 600;
+}
+
+header .navContainer nav .HambugerClose {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 9%;
+}
+
+header .navContainer nav .HambugerClose .closeIcon {
+  cursor: pointer;
+}
+
+header .navContainer nav .HambugerClose .hamIcon {
+  cursor: pointer;
+}
+
+header .navContainer nav .logo {
+  width: 30%;
+}
+
+header .imageliderDiv {
+  width: 100%;
+  margin-top: 0px;
+}
+
+header .imageliderDiv .heroMainDiv .heroImageandText {
+  position: relative;
+}
+
+header .imageliderDiv .heroMainDiv .heroImageandText::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 4;
+}
+
+header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink {
+  top: 100px;
+  padding: 82px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: unset;
+  position: absolute;
+  z-index: 10;
+}
+
+header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink .heroText {
+  font-size: 12px;
+  margin: 20px 0px;
+  color: white;
+  line-height: 1.7;
+}
+
+header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink .homePortfolioLink {
+  text-decoration: none;
+  width: 242px;
+  height: 72px;
+  margin-top: 20px auto auto auto;
+}
+
+header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink .homePortfolioLink:hover {
+  background: #60636d;
+}
+
+header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink .heroLinkSvg {
+  padding: 0px 19px;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1d23;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink .heroLinkSvg:hover {
+  background: #60636d;
+}
+
+header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink .heroLinkSvg .heroLink {
+  font-size: 15px;
+  color: white;
+}
+
+header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink .heroLinkSvg .arrow {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+header .buttonBox {
+  display: none;
+}
+
+main {
+  width: 100%;
+  margin: 30px auto auto auto;
+}
+
+main .welcome {
+  display: none;
+}
+
+main .welcomeText {
+  width: 80%;
+  margin: auto;
+}
+
+main .welcomeText h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+main .welcomeText p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+main .smallTeamSection {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  background: url(../assets/home/mobile/image-small-team.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+}
+
+main .smallTeamSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+main .smallTeamSection .smallTeamContainer {
+  position: relative;
+  z-index: 5;
+  padding: 150px 25px;
+}
+
+main .smallTeamSection h2 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+main .smallTeamSection .homeAboutLink {
+  display: inline-block;
+  text-decoration: none;
+  width: 187px;
+  height: 72px;
+  background-color: unset;
+}
+
+main .smallTeamSection .homeAboutLink:hover {
+  background: #60636d;
+}
+
+main .smallTeamSection .heroLinkSvg {
+  margin-top: 20px auto auto auto;
+  text-align: left;
+  padding: 0px 14px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1d23;
+}
+
+main .smallTeamSection .heroLinkSvg:hover {
+  background: #60636d;
+}
+
+main .smallTeamSection .heroLinkSvg .heroLink {
+  font-size: 15px;
+  color: white;
+}
+
+main .smallTeamSection .heroLinkSvg .arrow {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+main .featuredSection {
+  margin: 10px auto auto auto;
+  width: 80%;
+}
+
+main .featuredSection .featuredTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: unset;
+  margin: 30px 0px;
+}
+
+main .featuredSection .featuredTitle h2 {
+  font-size: 1.7rem;
+}
+
+main .featuredSection .featuredTitle .heroLinkSvgTop {
+  display: none;
+}
+
+main .featuredSection .featuredTitle .heroLinkSvgTop:hover {
+  background: #60636d;
+}
+
+main .featuredSection .featuredTitle .heroLinkSvgTop .featuredLink {
+  text-decoration: none;
+  color: white;
+}
+
+main .featuredSection .featurePortfolioContainer .eachPortfolio {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+main .featuredSection .featurePortfolioContainer .eachPortfolio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
+main .featuredSection .featurePortfolioContainer .eachPortfolio .featureNumber {
+  display: none;
+}
+
+main .featuredSection .featurePortfolioContainer .eachPortfolio .projectNameLink {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 30;
+}
+
+main .featuredSection .featurePortfolioContainer .eachPortfolio .projectNameLink .projectName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 5px;
+}
+
+main .featuredSection .featurePortfolioContainer .eachPortfolio .projectNameLink a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+
+main .featuredSection .featuredLink {
+  text-decoration: none;
+}
+
+main .featuredSection .heroLinkSvg {
+  margin-top: 20px auto auto auto;
+  text-align: left;
+  padding: 20px 14px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: unset;
+  background-color: #1b1d23;
+}
+
+main .featuredSection .heroLinkSvg .heroLink {
+  font-size: 14px;
+  color: white;
+  margin-right: 20px;
+}
+
+main .featuredSection .heroLinkSvg .arrow {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+footer {
+  width: 100%;
+  margin: 50px auto auto auto;
+  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 85%;
+  background-color: #eeeff4;
+}
+
+footer .footerNavBackground {
+  background: #eeeff4;
+  width: 100%;
+}
+
+footer .navContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .navContainer nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+}
+
+footer .navContainer nav .navUl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: unset;
+  width: 100%;
+  margin-left: 0px;
+  padding: unset;
+  display: flex !important;
+}
+
+footer .navContainer nav .navUl li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 17px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+footer .navContainer nav .HambugerClose {
+  display: none;
+}
+
+footer .navContainer nav .logo {
+  background: #1b1d23;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+footer .navContainer nav .mainLogo {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+footer .footerPortfolio {
+  text-decoration: none;
+  width: 60%;
+}
+
+footer .heroLinkSvg {
+  background: #1b1d23;
+  width: 100%;
+  margin-top: 20px auto auto auto;
+  text-align: left;
+  padding: 20px 14px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .heroLinkSvg:hover {
+  background: #60636d;
+}
+
+footer .heroLinkSvg .heroLink {
+  font-size: 14px;
+  color: white;
+}
+
+footer .heroLinkSvg .arrow {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+/**********
+
+                                                                                        PORTFOLIO
+
+                                                                                        **********/
+.PortfolioMainContainer .portfolioSection {
+  width: 80%;
+  margin: auto;
+}
+
+.PortfolioMainContainer .portfolioSection .eachProject {
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.PortfolioMainContainer .portfolioSection .eachProject::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 31, 31, 0.459);
+}
+
+.PortfolioMainContainer .portfolioSection .eachProject .projectNameLink {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 30;
+}
+
+.PortfolioMainContainer .portfolioSection .eachProject .projectNameLink .projectName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.PortfolioMainContainer .portfolioSection .eachProject .projectNameLink p {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+
+/*
+                                                                                                ABOUT SECTION
+                                                                                                */
+.aboutMain {
+  width: 100%;
+  margin: auto;
+}
+
+.aboutMain .aboutHero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  width: 100%;
+}
+
+.aboutMain .aboutHero .aboutHeadOne {
+  width: 100%;
+  height: 240px;
+  background: url(../assets/about/mobile/image-hero.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  z-index: -20;
+}
+
+.aboutMain .aboutHero .aboutHeadOne::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.582);
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -9;
+}
+
+.aboutMain .aboutHero .aboutHeadTwo {
+  padding-top: 70px;
+  width: 80%;
+  margin: auto;
+}
+
+.aboutMain .aboutHero .aboutHeadTwo::after {
+  position: absolute;
+  width: 90%;
+  height: 10%;
+  background-color: white;
+  left: 0;
+  top: 200px;
+  content: "";
+  z-index: -10;
+}
+
+.aboutMain .aboutHero .aboutHeadTwo .aboutTitle {
+  display: none;
+}
+
+.aboutMain .aboutHero .aboutHeadTwo .aboutHeaderText h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.aboutMain .aboutHero .aboutHeadTwo .aboutHeaderText p {
+  line-height: 1.7;
+}
+
+.aboutMain .heritageSession {
+  width: 80%;
+  margin: 50px auto auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: unset;
+}
+
+.aboutMain .heritageSession h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.aboutMain .heritageSession p {
+  margin-bottom: 50px;
+  line-height: 1.7;
+}
+
+.aboutMain .LeaderContainerDiv {
+  width: 80%;
+  margin: 50px auto auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: unset;
+}
+
+.aboutMain .LeaderContainerDiv h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.aboutMain .LeaderContainerDiv .eachLeader {
+  margin-bottom: 50px;
+}
+
+.aboutMain .LeaderContainerDiv .eachLeader .leaderName {
+  margin: 20px 0px 10px 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.aboutMain .LeaderContainerDiv .socialIcons {
+  width: 15%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutMain .LeaderContainerDiv .socialIcons .linkedinIcon {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.aboutMain .LeaderContainerDiv .socialIcons .twitterIcon {
+  cursor: pointer;
+}
+
+.contactMain .aboutHero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  width: 100%;
+}
+
+.contactMain .aboutHero .aboutHeadOne {
+  width: 100%;
+  height: 240px;
+  background: url(../assets/contact/mobile/image-hero.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  z-index: -20;
+}
+
+.contactMain .aboutHero .aboutHeadOne::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.582);
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -9;
+}
+
+.contactMain .aboutHero .aboutHeadTwo {
+  padding-top: 50px;
+  width: 80%;
+  margin: auto;
+}
+
+.contactMain .aboutHero .aboutHeadTwo::after {
+  position: absolute;
+  width: 90%;
+  height: 10%;
+  background-color: white;
+  left: 0;
+  top: 200px;
+  content: "";
+  z-index: -10;
+}
+
+.contactMain .aboutHero .aboutHeadTwo .aboutTitle {
+  display: none;
+}
+
+.contactMain .aboutHero .aboutHeadTwo .aboutHeaderText h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #1b1d23;
+}
+
+.contactMain .aboutHero .aboutHeadTwo .aboutHeaderText p {
+  line-height: 1.7;
+}
+
+.contactMain .contactDetailsContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+}
+
+.contactMain .contactDetailsContainer .contactHeading {
+  margin: 30px 0px;
+}
+
+.contactMain .contactDetailsContainer .contactHeading h3 {
+  font-size: 40px;
+  color: #1b1d23;
+}
+
+.contactMain .contactDetailsContainer .contactDetails .mainOffice .officeTitle {
+  margin: 20px 0px;
+  font-weight: 700;
+  color: #7d828f;
+}
+
+.contactMain .contactDetailsContainer .contactDetails .mainOffice p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.contactMain .contactDetailsContainer .contactDetails .mainOffice .viewOnmap {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.contactMain .contactDetailsContainer .contactDetails .mainOffice .viewOnmap .viewText {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contactMain .contactDetailsContainer .contactDetails .mainOffice .viewOnmap .iconDiv {
+  height: 100%;
+  cursor: pointer;
+}
+
+.contactMain .mapContainerDiv {
+  margin: 30px auto;
+  width: 80%;
+  height: 367px;
+  background-color: unset;
+}
+
+.contactMain .connectSection {
+  width: 80%;
+  margin: 50px auto 150px auto;
+}
+
+.contactMain .connectSection .connectHeader h3 {
+  font-size: 40px;
+  width: 80%;
+  color: #1b1d23;
+}
+
+.contactMain .connectSection .Alertsuccess {
+  color: #27ce27;
+  width: 100%;
+  margin: 20px 0px;
+  font-weight: bold;
+  line-height: 1.7;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contactMain .connectSection form {
+  margin-top: 30px;
+  position: relative;
+}
+
+.contactMain .connectSection form .formControl {
+  margin-bottom: 10px;
+  position: relative;
+  height: 40px;
+}
+
+.contactMain .connectSection form input {
+  border-bottom: 1px solid #eeeff4;
+  outline: none;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: unset;
+}
+
+.contactMain .connectSection form input:focus {
+  color: #1b1d23;
+  border-bottom: 1px solid #1b1d23;
+  font-weight: 500;
+}
+
+.contactMain .connectSection form .error {
+  color: #df5656;
+  position: absolute;
+  right: 0;
+  top: 13px;
+  z-index: 100;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.contactMain .connectSection form input .error {
+  border-bottom: 1px solid #df5656;
+}
+
+.contactMain .connectSection form button {
+  width: 50px;
+  height: 50px;
+  background-color: #1b1d23;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  cursor: pointer;
+}
+
+.contactMain .connectSection form button img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.layer {
+  position: absolute;
+  top: 11vh;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 97%;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+.myLink {
+  text-decoration: none;
+  color: #7d828f;
+  font-weight: 700;
+}
+
+.myLink:hover {
+  color: #1b1d23;
+}
+
+@media (min-width: 765px) {
+  body {
+    /*
+    PORTFOLIO
+
+    */
+    /*ABOUT US*/
+  }
+  body .mobile,
+  body .desktop {
+    display: none;
+  }
+  body .tablet {
+    display: block;
+  }
+  body .actives {
+    position: relative;
+    color: #1b1d23;
+  }
+  body .actives::after {
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: #1b1d23;
+    bottom: -10px;
+    content: "";
+    left: 13px;
+    margin: 10px auto auto auto;
+  }
+  body header {
+    position: relative;
+  }
+  body header .homeDesign {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body header .homeDesign .homeRectangle {
+    width: 1px;
+    height: 114px;
+    background-color: #eeeff4;
+    content: "";
+  }
+  body header .homeDesign .homeText {
+    font-size: 20px;
+    transform: rotate(90deg);
+    letter-spacing: 10px;
+    margin-top: 70px;
+    color: #eeeff4;
+  }
+  body header .navContainer {
+    padding-top: 20px;
+    position: unset;
+    margin: auto;
+    width: 80%;
+    height: unset;
+    background-color: unset;
+  }
+  body header .navContainer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: unset;
+    z-index: unset;
+    position: unset;
+    padding: 30px 0px;
+  }
+  body header .navContainer nav ul {
+    position: unset;
+    width: unset;
+    height: unset;
+    background-color: unset;
+    top: unset;
+    right: unset;
+    padding: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex !important;
+    width: 70%;
+  }
+  body header .navContainer nav ul li {
+    list-style: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding-top: 10px;
+  }
+  body header .navContainer nav .HambugerClose {
+    display: none;
+  }
+  body header .navContainer nav .logo {
+    width: unset;
+  }
+  body header .imageliderDiv {
+    width: 80%;
+    margin: auto;
+  }
+  body header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink {
+    top: 200px;
+    padding: 0px 70px;
+  }
+  body header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink h1 {
+    font-size: 4rem;
+  }
+  body header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink .heroText {
+    font-size: 20px;
+    margin: 20px 0px;
+  }
+  body header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink .heroLinkSvg {
+    width: 100%;
+  }
+  body main .welcomeSection {
+    position: relative;
+    width: 80%;
+    margin: auto;
+  }
+  body main .welcomeSection .welcome {
+    display: block;
+    font-size: 7.5rem;
+    font-weight: 700;
+    color: #eeeff4;
+  }
+  body main .welcomeSection h2 {
+    font-size: 3rem;
+    width: 70%;
+  }
+  body main .welcomeSection .welcomeText {
+    width: 100%;
+  }
+  body main .smallTeamSection {
+    width: 80%;
+    margin: 100px auto auto auto;
+    background: url(../assets/home/tablet/image-small-team.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  body main .smallTeamSection h2 {
+    font-size: 4rem;
+    width: 90%;
+  }
+  body main .smallTeamSection .heroLinkSvg {
+    width: 100%;
+  }
+  body main .featuredSection {
+    margin-top: 100px;
+  }
+  body main .featuredSection .featuredTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    margin: 50px 0px;
+  }
+  body main .featuredSection .featuredTitle h2 {
+    font-size: 3rem;
+  }
+  body main .featuredSection .featuredTitle .heroLinkSvgTop {
+    margin-top: 20px auto auto auto;
+    text-align: left;
+    padding: 20px 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: unset;
+    background-color: #1b1d23;
+    cursor: pointer;
+  }
+  body main .featuredSection .featuredTitle .heroLinkSvgTop .heroLink {
+    font-size: 14px;
+    color: white;
+    margin-right: 20px;
+  }
+  body main .featuredSection .featuredTitle .heroLinkSvgTop .arrow {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  }
+  body main .featuredSection .featurePortfolioContainer .eachPortfolio .featureNumber {
+    display: block;
+    font-size: 10rem;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #eeeff4;
+  }
+  body main .featuredSection .heroLinkSvg {
+    display: none;
+  }
+  body footer {
+    flex-direction: row;
+    height: 100px;
+    margin-top: 100px;
+    padding-bottom: unset;
+  }
+  body footer::after {
+    width: 80%;
+    height: 100px;
+    background-color: #eeeff4;
+    z-index: -1;
+  }
+  body footer .navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: unset;
+  }
+  body footer .navContainer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: unset;
+    width: 80%;
+    height: 100px;
+  }
+  body footer .navContainer nav .navUl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 62%;
+    margin-left: 20px;
+    padding: unset;
+    display: flex !important;
+  }
+  body footer .navContainer nav .navUl li {
+    font-size: 16px;
+    margin-bottom: unset;
+  }
+  body footer .navContainer nav .logo {
+    padding: 30px 30px;
+    margin-bottom: unset;
+    width: unset;
+    height: 100px;
+    background-color: #1b1d23;
+  }
+  body footer nav {
+    width: 100% !important;
+    flex-direction: row !important;
+  }
+  body footer nav ul {
+    flex-direction: row !important;
+  }
+  body footer .footerPortfolio {
+    width: 35%;
+  }
+  body footer .heroLinkSvg {
+    width: 100%;
+  }
+  body .PortfolioMainContainer .homeDesign .homeText {
+    font-size: 20px;
+    margin-top: 130px;
+  }
+  body .aboutMain {
+    width: 100%;
+    margin: auto;
+  }
+  body .aboutMain header {
+    position: relative;
+  }
+  body .aboutMain header .homeDesign {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 25px;
+    height: 270px;
+    background-color: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .aboutMain header .homeDesign .homeRectangle {
+    width: 1px;
+    height: 114px;
+    background-color: #eeeff4;
+    content: "";
+  }
+  body .aboutMain header .homeDesign .homeText {
+    font-size: 20px;
+    transform: rotate(90deg);
+    letter-spacing: 10px;
+    margin-top: 70px;
+    color: #eeeff4;
+  }
+  body .aboutMain .aboutHero {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    position: relative;
+  }
+  body .aboutMain .aboutHero .aboutHeadOne {
+    background: url(../assets/about/tablet/image-hero.jpg);
+    position: relative;
+    z-index: -20;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 720px;
+    background-color: unset;
+  }
+  body .aboutMain .aboutHero .aboutHeadOne::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 15, 15, 0.582);
+    right: 0;
+    bottom: 0;
+    content: "";
+    z-index: -9;
+  }
+  body .aboutMain .aboutHero .aboutHeadTwo {
+    padding: 70px 40px 0px 40px;
+    width: 80%;
+    height: 80%;
+    background-color: unset;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  body .aboutMain .aboutHero .aboutHeadTwo::after {
+    position: absolute;
+    width: 100%;
+    height: 77%;
+    background-color: white;
+    left: unset;
+    top: unset;
+    bottom: 0;
+    right: 0;
+    content: "";
+    z-index: -10;
+  }
+  body .aboutMain .aboutHero .aboutHeadTwo .aboutTitle {
+    display: block;
+    font-size: 7rem;
+    color: #eeeff4;
+    position: relative;
+    left: 60px;
+  }
+  body .aboutMain .aboutHero .aboutHeadTwo .aboutHeaderText {
+    margin-top: 100px;
+  }
+  body .aboutMain .aboutHero .aboutHeadTwo .aboutHeaderText h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  body .aboutMain .aboutHero .aboutHeadTwo .aboutHeaderText p {
+    line-height: 1.7;
+    margin-top: 40px;
+  }
+  body .aboutMain .heritageSession {
+    width: 80%;
+    margin: 70px auto auto auto;
+  }
+  body .aboutMain .heritageSession h3 {
+    font-size: 70px;
+  }
+  body .aboutMain .LeaderContainerDiv {
+    width: 80%;
+    margin: 40px auto 40px auto;
+  }
+  body .aboutMain .LeaderContainerDiv h3 {
+    font-size: 70px;
+  }
+  body .aboutMain .LeaderContainerDiv .leaderImageContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  body .aboutMain .LeaderContainerDiv .leaderImageContainer .socialIcons {
+    width: 25%;
+  }
+  body .contactMain header {
+    position: relative;
+  }
+  body .contactMain header .homeDesign {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 25px;
+    height: 270px;
+    background-color: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .contactMain header .homeDesign .homeRectangle {
+    width: 1px;
+    height: 114px;
+    background-color: #eeeff4;
+    content: "";
+  }
+  body .contactMain header .homeDesign .homeText {
+    font-size: 20px;
+    transform: rotate(90deg);
+    letter-spacing: 10px;
+    margin-top: 30px;
+    color: #eeeff4;
+  }
+  body .contactMain .aboutHero {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    position: relative;
+  }
+  body .contactMain .aboutHero .aboutHeadOne {
+    width: 100%;
+    background: url(../assets/contact/tablet/image-hero.jpg);
+    position: relative;
+    z-index: -20;
+    background-size: cover;
+    background-position: center;
+    height: 720px;
+  }
+  body .contactMain .aboutHero .aboutHeadOne::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 15, 15, 0.582);
+    right: 0;
+    bottom: 0;
+    content: "";
+    z-index: -9;
+  }
+  body .contactMain .aboutHero .aboutHeadTwo {
+    padding: 70px 40px 0px 40px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    background-color: unset;
+  }
+  body .contactMain .aboutHero .aboutHeadTwo::after {
+    position: absolute;
+    width: 100%;
+    height: 77%;
+    background-color: white;
+    left: unset;
+    top: unset;
+    bottom: 0;
+    right: 0;
+    content: "";
+    z-index: -10;
+  }
+  body .contactMain .aboutHero .aboutHeadTwo .aboutTitle {
+    display: block;
+    font-size: 7rem;
+    color: #eeeff4;
+    position: relative;
+    left: -20px;
+  }
+  body .contactMain .aboutHero .aboutHeadTwo .aboutHeaderText {
+    margin-top: 70px;
+  }
+  body .contactMain .aboutHero .aboutHeadTwo .aboutHeaderText h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  body .contactMain .aboutHero .aboutHeadTwo .aboutHeaderText p {
+    line-height: 1.7;
+    margin-top: 40px;
+  }
+  body .contactMain .contactDetailsContainer .mainOffice {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+  }
+  body .contactMain .contactDetailsContainer .mainOffice .viewOnmap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 32%;
+  }
+  body .contactMain .contactDetailsContainer .mainOffice .viewOnmap .viewText {
+    width: 60%;
+  }
+  body .contactMain .contactDetailsContainer .mainOffice .viewOnmap .iconDiv {
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body .contactMain input {
+    margin-top: 30px;
+    height: 70px;
+  }
+  body .contactMain button {
+    bottom: -80px !important;
+  }
+  body .contactMain .error {
+    top: 43px !important;
+  }
+  body .contactMain .connectSection {
+    margin: 50px auto 190px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    /*
+    PORTFOLIO
+
+    */
+  }
+  body .mobile,
+  body .tablet {
+    display: none;
+  }
+  body .desktop {
+    display: block;
+  }
+  body header {
+    position: relative;
+  }
+  body header .navContainer {
+    width: 80%;
+  }
+  body header .navContainer nav {
+    width: 60%;
+  }
+  body header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink {
+    top: 110px;
+    padding: unset;
+    padding-left: 130px;
+  }
+  body header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink h1 {
+    font-size: 3rem;
+    width: 57%;
+  }
+  body header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink .heroText {
+    font-size: 14px;
+    margin: 15px 0px;
+    width: 50%;
+  }
+  body header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink .heroLinkSvg {
+    width: 100%;
+  }
+  body header .buttonBox {
+    left: 50px;
+    position: relative;
+    left: -80px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body header .buttonBox .button.active {
+    color: white;
+    width: 80px;
+    height: 80px;
+    background-color: #1b1d23;
+  }
+  body header .buttonBox .button.active:hover {
+    background: black;
+  }
+  body header .buttonBox .button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+  }
+  body header .buttonBox .button:hover {
+    background: #eeeff4;
+  }
+  body main .welcomeSection {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+  }
+  body main .welcomeSection .welcome {
+    display: block;
+    font-size: 9.1em;
+    font-weight: 700;
+    color: #eeeff4;
+  }
+  body main .welcomeSection h2 {
+    font-size: 3rem;
+    width: unset;
+    position: relative;
+  }
+  body main .welcomeSection .welcomeText {
+    width: 50%;
+    position: relative;
+    top: -20px;
+    left: -70px;
+  }
+  body main .welcomeSection .welcomeText p {
+    width: 80%;
+    font-size: 12px;
+  }
+  body main .welcomeSection .imagewelcome {
+    position: absolute;
+    width: 30%;
+    height: 505px;
+    top: 90px;
+    right: 0px;
+    background: url(../assets/home/desktop/image-welcome.jpg);
+    z-index: -1000;
+  }
+  body main .welcomeSection .imagewelcome::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(99, 98, 98, 0.753);
+    z-index: -99;
+    mix-blend-mode: multiply;
+  }
+  body main .smallTeamSection {
+    background: url(../assets/home/desktop/image-small-team.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  body main .smallTeamSection .smallTeamContainer {
+    position: relative;
+    z-index: 5;
+    padding: 150px 70px;
+    width: 70%;
+  }
+  body main .smallTeamSection h2 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 3rem !important;
+  }
+  body main .smallTeamSection .heroLinkSvg {
+    width: 100% !important;
+  }
+  body main .featuredSection .featuredTitle .heroLinkSvgTop {
+    width: 16%;
+  }
+  body main .featuredSection .featurePortfolioContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+  }
+  body main .featuredSection .featurePortfolioContainer .eachPortfolio {
+    transition: 0.5s ease-in-out;
+  }
+  body main .featuredSection .featurePortfolioContainer .eachPortfolio:hover {
+    transform: scale(0.95);
+  }
+  body footer {
+    width: 80%;
+  }
+  body footer .navUl {
+    width: 50% !important;
+  }
+  body .PortfolioMainContainer .portfolioSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+  }
+  body .PortfolioMainContainer .portfolioSection .eachProject {
+    transition: 0.5s ease-in-out;
+  }
+  body .PortfolioMainContainer .portfolioSection .eachProject:hover {
+    transform: scale(0.95);
+  }
+  body .aboutMain .aboutHero .aboutHeadOne {
+    width: 61%;
+    background: url(../assets/about/desktop/image-hero.jpg);
+  }
+  body .aboutMain .aboutHero .aboutTitle {
+    display: block;
+    font-size: 9rem !important;
+    color: #eeeff4;
+    position: relative;
+    left: 0px !important;
+  }
+  body .aboutMain .aboutHero .aboutHeadTwo {
+    width: 60%;
+  }
+  body .aboutMain .aboutHero .aboutHeadTwo::after {
+    position: absolute;
+    width: 88%;
+    height: 73%;
+    background-color: white;
+    left: unset;
+    top: unset;
+    bottom: 0;
+    right: 0;
+    content: "";
+    z-index: -10;
+  }
+  body .aboutMain .aboutHero .aboutHeadTwo .aboutHeaderText {
+    margin-top: 10px;
+    position: absolute;
+    right: 0px;
+    width: 70%;
+  }
+  body .aboutMain .aboutHero .aboutHeadTwo .aboutHeaderText h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  body .aboutMain .aboutHero .aboutHeadTwo .aboutHeaderText p {
+    line-height: 1.7;
+    margin-top: 40px;
+  }
+  body .aboutMain .heritageSession {
+    width: 80%;
+    margin: 100px auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    height: 568px;
+  }
+  body .aboutMain .heritageSession h3 {
+    font-size: 40px;
+  }
+  body .aboutMain .heritageSession .heritageImageDiv {
+    background: url(../assets/about/desktop/image-heritage.jpg);
+    width: 45%;
+    height: 568px;
+  }
+  body .aboutMain .heritageSession .heritageTextDiv {
+    width: 50%;
+    margin-top: 70px;
+  }
+  body .aboutMain .heritageSession .heritageTextDiv p {
+    margin-bottom: 30px;
+  }
+  body .aboutMain .LeaderContainerDiv {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+  }
+  body .aboutMain .LeaderContainerDiv h3 {
+    font-size: 40px;
+    margin-right: 50px;
+  }
+  body .aboutMain .LeaderContainerDiv .socialIcons {
+    display: none;
+  }
+  body .contactMain .aboutHero .aboutHeadOne {
+    width: 61%;
+    background: url(../assets/contact/desktop/image-hero.jpg);
+  }
+  body .contactMain .aboutHero .aboutTitle {
+    display: block;
+    font-size: 9rem !important;
+    color: #eeeff4;
+    position: relative;
+    left: -100px !important;
+  }
+  body .contactMain .aboutHero .aboutHeadTwo {
+    width: 60%;
+  }
+  body .contactMain .aboutHero .aboutHeadTwo::after {
+    position: absolute;
+    width: 88%;
+    height: 73%;
+    background-color: white;
+    left: unset;
+    top: unset;
+    bottom: 0;
+    right: 0;
+    content: "";
+    z-index: -10;
+  }
+  body .contactMain .aboutHero .aboutHeadTwo .aboutHeaderText {
+    margin-top: 10px;
+    position: absolute;
+    right: 0px;
+    width: 70%;
+  }
+  body .contactMain .aboutHero .aboutHeadTwo .aboutHeaderText h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  body .contactMain .aboutHero .aboutHeadTwo .aboutHeaderText p {
+    line-height: 1.7;
+    margin-top: 40px;
+  }
+  body .contactMain .contactDetailsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    margin-top: 50px;
+  }
+  body .contactMain .contactDetailsContainer .contactDetails {
+    width: 50%;
+    margin-top: 0px;
+  }
+  body .contactMain .contactDetailsContainer .contactHeading {
+    width: 30%;
+    margin-top: 20px;
+  }
+  body .contactMain .contactDetailsContainer .mainOffice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: unset;
+  }
+  body .contactMain .contactDetailsContainer .mainOffice .viewOnmap {
+    width: 35%;
+  }
+  body .contactMain .contactDetailsContainer .mainOffice .viewOnmap .viewText {
+    width: 60%;
+    font-size: 12px !important;
+  }
+  body .contactMain .contactDetailsContainer .mainOffice .viewOnmap .iconDiv {
+    width: 18%;
+  }
+  body .contactMain .mapContainerDiv {
+    height: 500px;
+    margin: 60px auto;
+  }
+  body .contactMain .connectSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+  }
+  body .contactMain .connectSection .connectHeader {
+    margin-top: 40px;
+  }
+  body .contactMain .connectSection .connectHeader h3 {
+    font-size: 40px;
+    width: 80%;
+  }
+  body .contactMain .connectSection form {
+    width: 60%;
+    margin-top: unset !important;
+  }
+  body .contactMain .connectSection form .formControl {
+    margin-bottom: 10px;
+    position: relative;
+    height: 50px;
+    width: 100% !important;
+  }
+  body .contactMain .connectSection form input {
+    border-bottom: 1px solid #eeeff4;
+    outline: none;
+    width: 100%;
+    margin-bottom: 30px;
+    position: unset;
+    top: 0;
+    left: 0;
+    height: 50px;
+    padding-left: 20px;
+  }
+  body .contactMain .connectSection form button {
+    bottom: -70px !important;
+  }
+}
+
+@media (min-width: 1201px) {
+  body header .heroTitleTextLink {
+    top: 140px !important;
+  }
+  body header .heroTitleTextLink h1 {
+    font-size: 4rem !important;
+    width: 60%;
+  }
+  body header .heroTitleTextLink .heroText {
+    width: 60%;
+  }
+  body main .welcomeSection .welcome {
+    display: block;
+    font-size: 10.7rem;
+    font-weight: 700;
+    color: #eeeff4;
+  }
+  body main h2 {
+    width: 70% !important;
+  }
+  body main .imagewelcome {
+    height: 480px !important;
+    top: 100px !important;
+  }
+  body .aboutHeadOne {
+    width: 57% !important;
+  }
+  body .heritageSession h3 {
+    width: 50% !important;
+    margin-bottom: 70px !important;
+  }
+}
+
+@media (min-width: 1366px) {
+  body header .imageliderDiv .heroMainDiv .heroImageandText .heroTitleTextLink {
+    top: 340px;
+    width: 80%;
+  }
+  body main .welcomeSection .welcome {
+    font-size: 12rem;
+  }
+  body main h2 {
+    width: 70% !important;
+  }
+  body main .welcomeSection .imagewelcome {
+    height: 500px !important;
+    top: 110px !important;
+  }
+  body main .welcomeText {
+    left: -90px !important;
+  }
+  body .smallTeamContainer {
+    width: 60% !important;
+    margin-left: 70px;
+  }
+  body .smallTeamContainer .heroLinkSvg {
+    width: 27% !important;
+  }
+}

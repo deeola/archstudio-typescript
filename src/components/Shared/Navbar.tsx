@@ -1,11 +1,27 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+type Props = {};
+
+const Navbar: React.FC<Props> = () => {
+  // const {
+  //     displayMenu,
+  //     closeMenu,
+  //     ulDisplay,
+  //     DisplayCloseIcon,
+  //     DisplayOpenIcon,
+  //   } = ArchContext;
+
   return (
-    <div>
+    <nav>
+      <div className="logo">
+        <Link>
+          <img className="mainLogo" src={logo} alt="logo"></img>
+        </Link>
+      </div>
       <div></div>
-    </div>
+    </nav>
   );
 };
 
