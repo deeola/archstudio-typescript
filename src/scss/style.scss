@@ -1,0 +1,787 @@
+@import "config";
+@import "utilities";
+
+/* Hide Tablet and Mobile*/
+.tablet,
+.desktop {
+  display: none;
+}
+
+/*HOME STYLING*/
+
+//Header session
+
+header {
+  position: relative;
+  .homeDesign {
+    display: none;
+  }
+
+  .navContainer {
+    width: 100%;
+
+    padding-top: 20px;
+    position: relative;
+    height: 11vh;
+
+    nav {
+      @include Displayflex(row, space-between, center);
+      width: 80%;
+      margin: auto;
+      z-index: 100;
+      ul {
+        position: absolute;
+        @include widthHeigthBgcolor(90%, 235px, $very-light-grey);
+        top: 11vh;
+        z-index: 1000;
+        right: 0;
+        @include Displayflex(column, space-between, unset);
+        padding: 50px 30px;
+
+        li {
+          list-style: none;
+          font-weight: 600;
+        }
+      }
+
+      .HambugerClose {
+        @include Displayflex(row, space-between, center);
+        width: 9%;
+        .closeIcon {
+          cursor: pointer;
+        }
+
+        .hamIcon {
+          cursor: pointer;
+        }
+      }
+
+      .logo {
+        width: 30%;
+      }
+    }
+  }
+
+  //HERO IMAGE
+
+  .imageliderDiv {
+    width: 100%;
+    margin-top: 0px;
+    .heroMainDiv {
+      .heroImageandText {
+        position: relative;
+        &::after {
+          content: "";
+          @include widthHeigthBgcolor(100%, 100%, rgba(0, 0, 0, 0.61));
+          top: 0;
+          left: 0;
+          position: absolute;
+          z-index: 4;
+        }
+
+        //HERO TEXT AND BUTTON
+        .heroTitleTextLink {
+          top: 100px;
+          padding: 82px 30px;
+          @include Displayflex(column, space-between, unset);
+          position: absolute;
+          z-index: 10;
+
+          h1 {
+            color: white;
+            font-size: 2.5rem;
+          }
+
+          .heroText {
+            font-size: 12px;
+            margin: 20px 0px;
+            color: white;
+            line-height: 1.7;
+          }
+
+          .homePortfolioLink {
+            text-decoration: none;
+            width: 242px;
+            height: 72px;
+            margin-top: 20px auto auto auto;
+            &:hover {
+              background: $dark-grey;
+            }
+          }
+
+          .heroLinkSvg {
+            padding: 0px 19px;
+            @include widthHeigthBgcolor(100%, 100%, $very-dark-blue);
+
+            @include Displayflex(row, space-between, center);
+            cursor: pointer;
+
+            &:hover {
+              background: $dark-grey;
+            }
+
+            .heroLink {
+              font-size: 15px;
+              color: white;
+            }
+
+            .arrow {
+              filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+                saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+            }
+          }
+        }
+      }
+    }
+  }
+  .buttonBox {
+    display: none;
+  }
+}
+
+//main section
+
+main {
+  width: 100%;
+  margin: 30px auto auto auto;
+
+  //WELCOME SESSION
+  .welcome {
+    display: none;
+  }
+
+  .welcomeText {
+    width: 80%;
+    margin: auto;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  }
+
+  //SMALL TEAMS SECTION
+
+  .smallTeamSection {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    background: url(../assets/home/mobile/image-small-team.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include widthHeigthBgcolor(100%, 100%, rgba(0, 0, 0, 0.486));
+    }
+
+    .smallTeamContainer {
+      position: relative;
+      z-index: 5;
+      padding: 150px 25px;
+    }
+
+    h2 {
+      color: white;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+
+    .homeAboutLink {
+      display: inline-block;
+      text-decoration: none;
+      @include widthHeigthBgcolor(187px, 72px, unset);
+
+      &:hover {
+        background: $dark-grey;
+      }
+    }
+    .heroLinkSvg {
+      margin-top: 20px auto auto auto;
+
+      text-align: left;
+      padding: 0px 14px;
+      cursor: pointer;
+      @include Displayflex(row, space-between, center);
+      @include widthHeigthBgcolor(100%, 100%, $very-dark-blue);
+      &:hover {
+        background: $dark-grey;
+      }
+
+      .heroLink {
+        font-size: 15px;
+        color: white;
+      }
+
+      .arrow {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+          hue-rotate(93deg) brightness(103%) contrast(103%);
+      }
+    }
+  }
+
+  //FEATURED SECTION
+
+  .featuredSection {
+    margin: 10px auto auto auto;
+    width: 80%;
+
+    .featuredTitle {
+      @include Displayflex(column, space-between, unset);
+      margin: 30px 0px;
+
+      h2 {
+        font-size: 1.7rem;
+      }
+
+      .heroLinkSvgTop {
+        display: none;
+        &:hover {
+          background: $dark-grey;
+        }
+
+        .featuredLink {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+
+    .featurePortfolioContainer {
+      .eachPortfolio {
+        position: relative;
+        margin-bottom: 20px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          @include widthHeigthBgcolor(100%, 100%, rgba(0, 0, 0, 0.459));
+        }
+
+        .featureNumber {
+          display: none;
+        }
+
+        .projectNameLink {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          z-index: 30;
+
+          .projectName {
+            font-size: 1rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 5px;
+          }
+
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .featuredLink {
+      text-decoration: none;
+    }
+
+    .heroLinkSvg {
+      margin-top: 20px auto auto auto;
+      text-align: left;
+      padding: 20px 14px;
+      cursor: pointer;
+      @include Displayflex(row, center, center);
+      @include widthHeigthBgcolor(100%, unset, $very-dark-blue);
+
+      .heroLink {
+        font-size: 14px;
+        color: white;
+        margin-right: 20px;
+      }
+
+      .arrow {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+          hue-rotate(93deg) brightness(103%) contrast(103%);
+      }
+    }
+  }
+}
+
+//FOOTER
+
+footer {
+  width: 100%;
+  margin: 50px auto auto auto;
+  padding-bottom: 50px;
+  position: relative;
+  @include Displayflex(column, center, center);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    @include widthHeigthBgcolor(100%, 85%, $very-light-grey);
+  }
+
+  .footerNavBackground {
+    background: $very-light-grey;
+    width: 100%;
+  }
+
+  .navContainer {
+    width: 100%;
+    @include Displayflex(row, center, center);
+
+    nav {
+      @include Displayflex(column, center, center);
+      width: 80%;
+      text-align: center;
+      .navUl {
+        @include Displayflex(column, space-between, unset);
+        width: 100%;
+        margin-left: 0px;
+        padding: unset;
+        display: flex !important;
+
+        li {
+          list-style: none;
+          cursor: pointer;
+          font-size: 17px;
+          margin-bottom: 30px;
+          text-align: center;
+        }
+      }
+      .HambugerClose {
+        display: none;
+      }
+
+      .logo {
+        background: $very-dark-blue;
+        padding: 30px;
+        margin-bottom: 30px;
+      }
+
+      .mainLogo {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+          hue-rotate(93deg) brightness(103%) contrast(103%);
+      }
+    }
+  }
+  .footerPortfolio {
+    text-decoration: none;
+    width: 60%;
+  }
+
+  .heroLinkSvg {
+    background: $very-dark-blue;
+    width: 100%;
+    margin-top: 20px auto auto auto;
+    text-align: left;
+    padding: 20px 14px;
+    cursor: pointer;
+    @include Displayflex(row, space-between, center);
+    &:hover {
+      background: $dark-grey;
+    }
+
+    .heroLink {
+      font-size: 14px;
+      color: white;
+    }
+
+    .arrow {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+        hue-rotate(93deg) brightness(103%) contrast(103%);
+    }
+  }
+}
+
+/**********
+
+                                                                                        PORTFOLIO
+
+                                                                                        **********/
+.PortfolioMainContainer {
+  .portfolioSection {
+    width: 80%;
+    margin: auto;
+
+    .eachProject {
+      position: relative;
+      margin-bottom: 20px;
+      cursor: pointer;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include widthHeigthBgcolor(100%, 100%, rgba(31, 31, 31, 0.459));
+      }
+
+      .projectNameLink {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 30;
+
+        .projectName {
+          font-size: 1rem;
+          font-weight: 700;
+          color: white;
+          margin-bottom: 5px;
+        }
+
+        p {
+          text-decoration: none;
+          color: white;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+/*
+                                                                                                ABOUT SECTION
+                                                                                                */
+
+.aboutMain {
+  width: 100%;
+  margin: auto;
+
+  //ABOUT HEADER MOBILE
+  .aboutHero {
+    position: relative;
+    @include Displayflex(column, unset, unset);
+    width: 100%;
+    .aboutHeadOne {
+      width: 100%;
+      height: 240px;
+      background: url(../assets/about/mobile/image-hero.jpg);
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      z-index: -20;
+      &::after {
+        position: absolute;
+        @include widthHeigthBgcolor(100%, 100%, rgba(0, 0, 0, 0.582));
+        right: 0;
+        bottom: 0;
+        content: "";
+        z-index: -9;
+      }
+    }
+
+    .aboutHeadTwo {
+      padding-top: 70px;
+      width: 80%;
+      margin: auto;
+
+      &::after {
+        position: absolute;
+        @include widthHeigthBgcolor(90%, 10%, white);
+
+        left: 0;
+        top: 200px;
+        content: "";
+        z-index: -10;
+      }
+
+      .aboutTitle {
+        display: none;
+      }
+
+      .aboutHeaderText {
+        h3 {
+          font-size: 40px;
+          margin-bottom: 20px;
+        }
+        p {
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+
+  //Heritage session
+
+  .heritageSession {
+    width: 80%;
+    margin: 50px auto auto auto;
+    @include Displayflex(column, left, unset);
+
+    h3 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      width: 70%;
+    }
+    p {
+      margin-bottom: 50px;
+      line-height: 1.7;
+    }
+  }
+
+  .LeaderContainerDiv {
+    width: 80%;
+    margin: 50px auto auto auto;
+    @include Displayflex(column, left, unset);
+
+    h3 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      width: 70%;
+    }
+    .eachLeader {
+      margin-bottom: 50px;
+      .leaderName {
+        margin: 20px 0px 10px 0px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+
+    .socialIcons {
+      width: 15%;
+      margin-top: 20px;
+      @include Displayflex(row, space-between, center);
+
+      .linkedinIcon {
+        margin-right: 20px;
+        cursor: pointer;
+      }
+      .twitterIcon {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//CONTACT SESSION
+
+.contactMain {
+  //Contact hero
+  .aboutHero {
+    position: relative;
+    @include Displayflex(column, unset, unset);
+    width: 100%;
+    .aboutHeadOne {
+      width: 100%;
+      height: 240px;
+      background: url(../assets/contact/mobile/image-hero.jpg);
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      z-index: -20;
+      &::after {
+        position: absolute;
+        @include widthHeigthBgcolor(100%, 100%, rgba(0, 0, 0, 0.582));
+        right: 0;
+        bottom: 0;
+        content: "";
+        z-index: -9;
+      }
+    }
+
+    .aboutHeadTwo {
+      padding-top: 50px;
+      width: 80%;
+      margin: auto;
+
+      &::after {
+        position: absolute;
+        @include widthHeigthBgcolor(90%, 10%, white);
+        left: 0;
+        top: 200px;
+        content: "";
+        z-index: -10;
+      }
+
+      .aboutTitle {
+        display: none;
+      }
+
+      .aboutHeaderText {
+        h3 {
+          font-size: 40px;
+          margin-bottom: 20px;
+          color: $very-dark-blue;
+        }
+        p {
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+
+  //MAIN
+
+  .contactDetailsContainer {
+    width: 80%;
+    margin: auto;
+    @include Displayflex(column, unset, unset);
+
+    .contactHeading {
+      margin: 30px 0px;
+      h3 {
+        font-size: 40px;
+        color: $very-dark-blue;
+      }
+    }
+
+    .contactDetails {
+      .mainOffice {
+        .officeTitle {
+          margin: 20px 0px;
+          font-weight: 700;
+          color: $medium-grey;
+        }
+
+        p {
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+
+        .viewOnmap {
+          @include Displayflex(row, unset, center);
+          text-align: center;
+          margin: 20px 0px;
+          .viewText {
+            margin-right: 30px;
+            @include Displayflex(row, unset, center);
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          .iconDiv {
+            height: 100%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  //Map
+
+  .mapContainerDiv {
+    margin: 30px auto;
+    @include widthHeigthBgcolor(80%, 367px, unset);
+  }
+
+  //FORM
+
+  .connectSection {
+    width: 80%;
+    margin: 50px auto 150px auto;
+    .connectHeader {
+      h3 {
+        font-size: 40px;
+        width: 80%;
+        color: $very-dark-blue;
+      }
+    }
+
+    .Alertsuccess {
+      color: rgb(39, 206, 39);
+      width: 100%;
+      margin: 20px 0px;
+      font-weight: bold;
+      line-height: 1.7;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    form {
+      margin-top: 30px;
+      position: relative;
+
+      .formControl {
+        margin-bottom: 10px;
+        position: relative;
+        height: 40px;
+      }
+
+      input {
+        border-bottom: 1px solid $very-light-grey;
+        outline: none;
+        margin-bottom: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-left: 20px;
+        @include widthHeigthBgcolor(100%, 100%, unset);
+
+        &:focus {
+          color: $very-dark-blue;
+          border-bottom: 1px solid $very-dark-blue;
+          font-weight: 500;
+        }
+      }
+
+      .error {
+        color: $errors-red;
+        position: absolute;
+        right: 0;
+        top: 13px;
+        z-index: 100;
+        font-size: 10px;
+        font-weight: 700;
+      }
+
+      input .error {
+        border-bottom: 1px solid $errors-red;
+      }
+
+      button {
+        @include widthHeigthBgcolor(50px, 50px, $very-dark-blue);
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+        cursor: pointer;
+
+        img {
+          filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+            saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+        }
+      }
+    }
+  }
+}
+
+//GENERAL
+
+.layer {
+  position: absolute;
+  top: 11vh;
+  left: 0;
+  z-index: 900;
+  @include widthHeigthBgcolor(100%, 97%, rgba(0, 0, 0, 0.76));
+}
+
+.myLink {
+  text-decoration: none;
+  color: $medium-grey;
+  font-weight: 700;
+  &:hover {
+    color: $very-dark-blue;
+  }
+}
+
+@import "tablet";
+@import "desktop";

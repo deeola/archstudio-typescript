@@ -1,0 +1,14 @@
+/*FLEX DISPLAY*/
+
+@mixin Displayflex($fd, $js, $ai) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $js;
+  align-items: $ai;
+}
+
+@mixin widthHeigthBgcolor($width, $heigth, $bgcolor) {
+  width: $width;
+  height: $heigth;
+  background-color: $bgcolor;
+}

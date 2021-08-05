@@ -1,0 +1,534 @@
+@media (min-width: 765px) {
+  body {
+    .mobile,
+    .desktop {
+      display: none;
+    }
+
+    .tablet {
+      display: block;
+    }
+
+    .actives {
+      position: relative;
+      color: $very-dark-blue;
+      &::after {
+        position: absolute;
+        @include widthHeigthBgcolor(70%, 2px, $very-dark-blue);
+        bottom: -10px;
+        content: "";
+        left: 13px;
+        margin: 10px auto auto auto;
+      }
+    }
+
+    //HEADER
+
+    header {
+      position: relative;
+      .homeDesign {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        width: 25px;
+
+        @include Displayflex(column, space-between, center);
+        .homeRectangle {
+          @include widthHeigthBgcolor(1px, 114px, $very-light-grey);
+          content: "";
+        }
+        .homeText {
+          font-size: 20px;
+          transform: rotate(90deg);
+          letter-spacing: 10px;
+          margin-top: 70px;
+          color: $very-light-grey;
+        }
+      }
+
+      .navContainer {
+        padding-top: 20px;
+        position: unset;
+        margin: auto;
+        @include widthHeigthBgcolor(80%, unset, unset);
+        nav {
+          @include Displayflex(row, space-between, center);
+          width: 90%;
+          margin: unset;
+          z-index: unset;
+          position: unset;
+          padding: 30px 0px;
+          ul {
+            position: unset;
+            @include widthHeigthBgcolor(unset, unset, unset);
+            top: unset;
+            right: unset;
+            padding: unset;
+            @include Displayflex(row, space-between, center);
+            display: flex !important;
+            width: 70%;
+
+            li {
+              list-style: none;
+              font-weight: 500;
+              cursor: pointer;
+              padding-top: 10px;
+            }
+          }
+
+          .HambugerClose {
+            display: none;
+          }
+
+          .logo {
+            width: unset;
+          }
+        }
+      }
+
+      .imageliderDiv {
+        width: 80%;
+        margin: auto;
+        .heroMainDiv {
+          .heroImageandText {
+            //HERO TEXT AND BUTTON
+            .heroTitleTextLink {
+              top: 200px;
+              padding: 0px 70px;
+
+              h1 {
+                font-size: 4rem;
+              }
+
+              .heroText {
+                font-size: 20px;
+                margin: 20px 0px;
+              }
+
+              .heroLinkSvg {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //HOME MAIN
+
+    main {
+      //WELCOME SECTION
+
+      .welcomeSection {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        .welcome {
+          display: block;
+          font-size: 7.5rem;
+          font-weight: 700;
+          color: $very-light-grey;
+        }
+        h2 {
+          font-size: 3rem;
+          width: 70%;
+        }
+        .welcomeText {
+          width: 100%;
+        }
+      }
+
+      //SMALL TEAMS SECTION
+
+      .smallTeamSection {
+        width: 80%;
+        margin: 100px auto auto auto;
+        background: url(../assets/home/tablet/image-small-team.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        h2 {
+          font-size: 4rem;
+          width: 90%;
+        }
+        .heroLinkSvg {
+          width: 100%;
+        }
+      }
+
+      //Tablet FEATURE SECTION
+
+      .featuredSection {
+        margin-top: 100px;
+        .featuredTitle {
+          @include Displayflex(row, space-between, unset);
+          margin: 50px 0px;
+
+          h2 {
+            font-size: 3rem;
+          }
+
+          .heroLinkSvgTop {
+            margin-top: 20px auto auto auto;
+            text-align: left;
+            padding: 20px 14px;
+            @include Displayflex(row, center, center);
+            @include widthHeigthBgcolor(30%, unset, $very-dark-blue);
+            cursor: pointer;
+
+            .heroLink {
+              font-size: 14px;
+              color: white;
+              margin-right: 20px;
+            }
+
+            .arrow {
+              filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+                saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+            }
+          }
+        }
+
+        .featurePortfolioContainer {
+          .eachPortfolio {
+            .featureNumber {
+              display: block;
+              font-size: 10rem;
+              font-weight: 700;
+              position: absolute;
+              top: 20px;
+              right: 20px;
+              color: $very-light-grey;
+            }
+          }
+        }
+
+        .heroLinkSvg {
+          display: none;
+        }
+      }
+    }
+
+    //FOOTER
+
+    footer {
+      flex-direction: row;
+      height: 100px;
+      margin-top: 100px;
+      padding-bottom: unset;
+      &::after {
+        @include widthHeigthBgcolor(80%, 100px, $very-light-grey);
+        z-index: -1;
+      }
+
+      .navContainer {
+        @include Displayflex(row, center, center);
+        @include widthHeigthBgcolor(100%, 100px, unset);
+
+        nav {
+          @include Displayflex(column, left, unset);
+          width: 80%;
+          height: 100px;
+          .navUl {
+            @include Displayflex(column, space-between, center);
+            width: 62%;
+            margin-left: 20px;
+            padding: unset;
+            display: flex !important;
+
+            li {
+              font-size: 16px;
+              margin-bottom: unset;
+            }
+          }
+
+          .logo {
+            padding: 30px 30px;
+            margin-bottom: unset;
+            @include widthHeigthBgcolor(unset, 100px, $very-dark-blue);
+          }
+        }
+      }
+
+      nav {
+        width: 100% !important;
+        flex-direction: row !important;
+
+        ul {
+          flex-direction: row !important;
+        }
+      }
+      .footerPortfolio {
+        width: 35%;
+      }
+
+      .heroLinkSvg {
+        width: 100%;
+      }
+    }
+
+    /*
+    PORTFOLIO
+
+    */
+
+    .PortfolioMainContainer {
+      .homeDesign {
+        .homeText {
+          font-size: 20px;
+          margin-top: 130px;
+        }
+      }
+    }
+
+    /*ABOUT US*/
+
+    .aboutMain {
+      width: 100%;
+      margin: auto;
+
+      header {
+        position: relative;
+
+        .homeDesign {
+          position: absolute;
+          top: 0;
+          left: 30px;
+          @include widthHeigthBgcolor(25px, 270px, unset);
+          @include Displayflex(column, space-between, center);
+          .homeRectangle {
+            @include widthHeigthBgcolor(1px, 114px, $very-light-grey);
+            content: "";
+          }
+          .homeText {
+            font-size: 20px;
+            transform: rotate(90deg);
+            letter-spacing: 10px;
+            margin-top: 70px;
+            color: $very-light-grey;
+          }
+        }
+      }
+      .aboutHero {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        position: relative;
+        .aboutHeadOne {
+          background: url(../assets/about/tablet/image-hero.jpg);
+          position: relative;
+          z-index: -20;
+          background-size: cover;
+          background-position: center;
+          @include widthHeigthBgcolor(100%, 720px, unset);
+          &::after {
+            position: absolute;
+            @include widthHeigthBgcolor(100%, 100%, rgba(15, 15, 15, 0.582));
+            right: 0;
+            bottom: 0;
+            content: "";
+            z-index: -9;
+          }
+        }
+
+        .aboutHeadTwo {
+          padding: 70px 40px 0px 40px;
+          @include widthHeigthBgcolor(80%, 80%, unset);
+          margin: auto;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+
+          &::after {
+            position: absolute;
+            @include widthHeigthBgcolor(100%, 77%, white);
+            left: unset;
+            top: unset;
+            bottom: 0;
+            right: 0;
+            content: "";
+            z-index: -10;
+          }
+
+          .aboutTitle {
+            display: block;
+            font-size: 7rem;
+            color: $very-light-grey;
+            position: relative;
+            left: 60px;
+          }
+
+          .aboutHeaderText {
+            margin-top: 100px;
+
+            h3 {
+              font-size: 40px;
+              margin-bottom: 20px;
+            }
+            p {
+              line-height: 1.7;
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+
+      .heritageSession {
+        width: 80%;
+        margin: 70px auto auto auto;
+        h3 {
+          font-size: 70px;
+        }
+      }
+
+      //
+
+      .LeaderContainerDiv {
+        width: 80%;
+        margin: 40px auto 40px auto;
+
+        h3 {
+          font-size: 70px;
+        }
+
+        .leaderImageContainer {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+
+          .socialIcons {
+            width: 25%;
+          }
+        }
+      }
+    }
+
+    //CONTACT
+
+    .contactMain {
+      header {
+        position: relative;
+
+        .homeDesign {
+          position: absolute;
+          top: 0;
+          left: 30px;
+          @include widthHeigthBgcolor(25px, 270px, unset);
+          @include Displayflex(column, space-between, center);
+          .homeRectangle {
+            @include widthHeigthBgcolor(1px, 114px, $very-light-grey);
+            content: "";
+          }
+          .homeText {
+            font-size: 20px;
+            transform: rotate(90deg);
+            letter-spacing: 10px;
+            margin-top: 30px;
+            color: $very-light-grey;
+          }
+        }
+      }
+
+      .aboutHero {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        position: relative;
+        .aboutHeadOne {
+          width: 100%;
+          background: url(../assets/contact/tablet/image-hero.jpg);
+          position: relative;
+          z-index: -20;
+          background-size: cover;
+          background-position: center;
+          height: 720px;
+
+          &::after {
+            position: absolute;
+            @include widthHeigthBgcolor(100%, 100%, rgba(15, 15, 15, 0.582));
+            right: 0;
+            bottom: 0;
+            content: "";
+            z-index: -9;
+          }
+        }
+
+        .aboutHeadTwo {
+          padding: 70px 40px 0px 40px;
+          margin: auto;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          @include widthHeigthBgcolor(80%, 80%, unset);
+
+          &::after {
+            position: absolute;
+            @include widthHeigthBgcolor(100%, 77%, white);
+            left: unset;
+            top: unset;
+            bottom: 0;
+            right: 0;
+            content: "";
+            z-index: -10;
+          }
+
+          .aboutTitle {
+            display: block;
+            font-size: 7rem;
+            color: $very-light-grey;
+            position: relative;
+            left: -20px;
+          }
+
+          .aboutHeaderText {
+            margin-top: 70px;
+
+            h3 {
+              font-size: 40px;
+              margin-bottom: 20px;
+            }
+            p {
+              line-height: 1.7;
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+
+      .contactDetailsContainer {
+        .mainOffice {
+          width: 100%;
+          @include Displayflex(row, space-between, unset);
+
+          .viewOnmap {
+            @include Displayflex(row, space-between, center);
+            width: 32%;
+            .viewText {
+              width: 60%;
+            }
+            .iconDiv {
+              width: 18%;
+              @include Displayflex(row, center, center);
+            }
+          }
+        }
+      }
+
+      input {
+        margin-top: 30px;
+        height: 70px;
+      }
+      button {
+        bottom: -80px !important;
+      }
+
+      .error {
+        top: 43px !important;
+      }
+
+      .connectSection {
+        margin: 50px auto 190px auto;
+      }
+    }
+  }
+}
