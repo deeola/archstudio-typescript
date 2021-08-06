@@ -5,12 +5,10 @@ import iconArrow from "../../../assets/icons/icon-arrow.svg";
 interface Props {
   currents: number;
   handleChange: (num: number) => void;
-  slides: Sliders;
+  SliderData: Sliders;
 }
 
-const ImageSlider: React.FC<Props> = ({ slides }) => {
-  //get slides
-
+const ImageSlider: React.FC<Props> = () => {
   //states
   const [current, setCurrent] = useState<Props["currents"]>(0);
 

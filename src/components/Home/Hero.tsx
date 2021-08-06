@@ -5,7 +5,6 @@ import { SliderData, Sliders } from "./imageSlider/SliderData";
 interface Props {
   currents: number;
   handleChange: (num: number) => void;
-  slides: Sliders;
 }
 
 const Hero: React.FC<{}> = (props) => {
@@ -17,7 +16,7 @@ const Hero: React.FC<{}> = (props) => {
   return (
     <div className="imageliderDiv">
       <ImageSlider
-        slides={SliderData}
+        SliderData={SliderData}
         currents={current}
         handleChange={handleChanges}
       />
