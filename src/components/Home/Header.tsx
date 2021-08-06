@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "../Shared/Navbar";
+import Hero from "./Hero";
 
-function Header() {
+const Header = () => {
   return (
     <header>
       <div className="homeDesign">
@@ -11,8 +12,9 @@ function Header() {
       <div className="navContainer">
         <Navbar />
       </div>
+      <Hero />
     </header>
   );
-}
+};
 
 export default Header;

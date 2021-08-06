@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 
-const Home = () => {
+const Home: React.FC<{}> = (props) => {
   return (
     <div>
       <Header />
