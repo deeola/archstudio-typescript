@@ -6,9 +6,9 @@ export type Sliders = {
   };
   title: string;
   heroText: string;
-}[];
+};
 
-export const SliderData: Sliders = [
+export const SliderData: Sliders[] = [
   {
     image: {
       mobile: "/home/mobile/image-hero-federal.jpg",
