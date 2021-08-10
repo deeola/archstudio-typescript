@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import hamburger from "../../assets/icons/icon-hamburger.svg";
 import close from "../../assets/icons/icon-close.svg";
 
@@ -10,9 +10,9 @@ const Navbar: React.FC<Props> = () => {
   return (
     <nav>
       <div className="logo">
-        <div>
+        <Link to="/">
           <img className="mainLogo" src={logo} alt="logo"></img>
-        </div>
+        </Link>
       </div>
       <div className="HambugerClose">
         <img className="hamIcon" src={hamburger} alt="ham-icon"></img>
