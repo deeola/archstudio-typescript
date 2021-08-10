@@ -1,7 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
+
+interface iProps {}
 
 /*About Hero component */
-function AboutHero() {
+const AboutHero: FC<iProps> = () => {
   return (
     <div className="aboutHero">
       <div className="aboutHeadOne"></div>
@@ -19,6 +21,6 @@ function AboutHero() {
       </div>
     </div>
   );
-}
+};
 
 export default AboutHero;
