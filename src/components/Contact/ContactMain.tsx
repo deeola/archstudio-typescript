@@ -14,6 +14,7 @@ const ContactMain: FC<IProps> = () => {
       setScriptLoaded(true);
     });
   }, []);
+
   return (
     <main>
       <Details />
