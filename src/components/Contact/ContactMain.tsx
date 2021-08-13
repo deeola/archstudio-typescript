@@ -1,20 +1,12 @@
-import React, { FC, useState, useEffect } from "react";
-import { loadMapApi } from "../Utils/GoogleMapsUtils";
+import React, { FC } from "react";
 import Details from "./Details";
 import Map from "./Map";
 
-interface IProps {}
+interface IProps {
+  scriptLoaded: boolean;
+}
 
-const ContactMain: FC<IProps> = () => {
-  const [scriptLoaded, setScriptLoaded] = useState(false);
-
-  useEffect(() => {
-    const googleMapScript = loadMapApi();
-    googleMapScript.addEventListener("load", () => {
-      setScriptLoaded(true);
-    });
-  }, []);
-
+const ContactMain: FC<IProps> = ({ scriptLoaded }) => {
   return (
     <main>
       <Details />
