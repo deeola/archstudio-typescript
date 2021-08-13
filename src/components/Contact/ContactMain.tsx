@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Connect from "./Connect";
 import Details from "./Details";
 import Map from "./Map";
 
@@ -13,6 +14,7 @@ const ContactMain: FC<IProps> = ({ scriptLoaded }) => {
       {scriptLoaded && (
         <Map mapType={google.maps.MapTypeId.ROADMAP} mapTypeControl={true} />
       )}
+      <Connect />
     </main>
   );
 };
