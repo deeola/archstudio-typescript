@@ -18,6 +18,7 @@ import btowerMobile from "../../assets/portfolio/mobile/image-228b.jpg";
 import prototypeMobile from "../../assets/portfolio/mobile/image-prototype.jpg";
 
 import iconArrow from "../../assets/icons/icon-arrow.svg";
+import { Link } from "react-router-dom";
 
 interface propFeat {}
 
@@ -28,7 +29,9 @@ const Featured: FC<propFeat> = () => {
         <h2>Featured</h2>
         <div className="heroLinkSvgTop">
           <p className="heroLink">
-            <div className="featuredLink">See All</div>
+            <Link className="featuredLink" to="/Portfolio">
+              See All
+            </Link>
           </p>
           <div className="arrowDiv">
             <img className="arrow" src={iconArrow} alt="iconArrow"></img>
@@ -43,7 +46,7 @@ const Featured: FC<propFeat> = () => {
           <p className="featureNumber">1</p>
           <div className="projectNameLink">
             <p className="projectName">Project Del Sol</p>
-            <div>View All Projects</div>
+            <Link to="/Portfolio">View All Projects</Link>
           </div>
         </div>
 
@@ -54,7 +57,7 @@ const Featured: FC<propFeat> = () => {
           <p className="featureNumber">2</p>
           <div className="projectNameLink">
             <p className="projectName">228B Tower</p>
-            <div>View All Projects</div>
+            <Link to="/Portfolio">View All Projects</Link>
           </div>
         </div>
         <div className="eachPortfolio prototype">
@@ -64,7 +67,7 @@ const Featured: FC<propFeat> = () => {
           <p className="featureNumber">3</p>
           <div className="projectNameLink">
             <p className="projectName">Le Prototype</p>
-            <div>View All Projects</div>
+            <Link to="/Portfolio">View All Projects</Link>
           </div>
         </div>
       </div>

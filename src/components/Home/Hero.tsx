@@ -1,6 +1,7 @@
 import React, { useState, FC } from "react";
 import { SliderData } from "./imageSlider/SliderData";
 import iconArrow from "../../assets/icons/icon-arrow.svg";
+import { Link } from "react-router-dom";
 
 const Hero: FC<{}> = (props) => {
   const [current, setCurrent] = useState<number>(0);
@@ -45,7 +46,7 @@ const Hero: FC<{}> = (props) => {
                         <h1 className="heroTitle">{slide.title}</h1>
                         <p className="heroText"> {slide.heroText}</p>
                       </div>
-                      <div className="homePortfolioLink">
+                      <Link className="homePortfolioLink" to="/Portfolio">
                         <div className="heroLinkSvg">
                           <p className="heroLink">See Our Portfolio </p>
                           <div className="arrowDiv">
@@ -56,7 +57,7 @@ const Hero: FC<{}> = (props) => {
                             ></img>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                     <div className="buttonBox">
                       <div
