@@ -4,6 +4,7 @@ import iconArrow from "../../assets/icons/icon-arrow.svg";
 import { Link } from "react-router-dom";
 
 const Hero: FC<{}> = (props) => {
+  //set current number and subsequent numbers for the hero images
   const [current, setCurrent] = useState<number>(0);
   const handleChanges = (num: number): void => {
     setCurrent(num);

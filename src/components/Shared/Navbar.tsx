@@ -3,8 +3,6 @@ import logo from "../../assets/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import hamburger from "../../assets/icons/icon-hamburger.svg";
 import close from "../../assets/icons/icon-close.svg";
-import Layer from "./Layer";
-
 type CSSprop = React.CSSProperties;
 
 interface IStates {}
